@@ -5,21 +5,17 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.ScrollTo;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.conditions.Check;
 import net.serenitybdd.screenplay.questions.Visibility;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-
-import org.apache.commons.compress.archivers.sevenz.CLI;
 import questions.ViewElementsDisplay;
 import tasks.Acciones;
+import ui.Config;
 import ui.HomeWiki;
 import ui.OnboardingWiki;
-
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 
@@ -35,8 +31,8 @@ public class WikiStepsDefinitions {
 
     }
 
-    @When("agregar el idioma {string}")
-    public void agregarElIdioma(String idioma) {
+    @When("agrego el idioma {string}")
+    public void agregoElIdioma(String idioma) {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 Click.on(OnboardingWiki.ADD_LANGUAGES),
                 Click.on(OnboardingWiki.SELECT_LANGUAGE.of(idioma)),
@@ -64,29 +60,56 @@ public class WikiStepsDefinitions {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 Acciones.realizarBusqueda(aBuscar)
         );
-        seleccionoElPrimerResultado(aBuscar);
-
     }
 
     @And("selecciono el primer resultado")
-    public void seleccionoElPrimerResultado(String aBuscar) {
+    public void seleccionoElPrimerResultado() {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 Click.on(HomeWiki.FIRST_ELEMENT),
                 Check.whether(Visibility.of(HomeWiki.CLOSE_INFO))
-                        .andIfSo(Click.on(HomeWiki.CLOSE_INFO)),
-                Click.on(HomeWiki.RESULT.of(aBuscar))
-
+                        .andIfSo(Click.on(HomeWiki.CLOSE_INFO))
         );
+    }
 
+    @Then("visualizo el resultado {string}")
+    public void visualizoElResultado(String busqueda) {
+        theActorInTheSpotlight().should(
+                seeThat("Se ve resultado de la busqueda",
+                        ViewElementsDisplay.busqueda(busqueda)
+                ));
+    }
+
+    @When("ingreso a configuracion de {string}")
+    public void ingresoAConfiguracion(String opcion) {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                Acciones.configuracionParametro(opcion)
+        );
+    }
+
+    @Then("visualizo la nueva configuración")
+    public void visualizoLaNuevaConfiguracion() {
+        theActorInTheSpotlight().should(
+                seeThat("Se ve el nuevo idioma en la configuración",
+                        ViewElementsDisplay.nuevoIdiomaEnConfiguracion()
+                ));
 
     }
 
-    @Then("visualizo el resultado")
-    public void visualizoElResultado() {
+    @Then("visualizo la nueva configuración del feed")
+    public void visualizoLaNuevaConfiguracionDelFeed() {
         theActorInTheSpotlight().should(
-                seeThat("Se ve resultado de la busqueda",
-                        ViewElementsDisplay.busqueda()
+                seeThat("Se ve la nueva configuración del feed",
+                        ViewElementsDisplay.nuevaConfiguracionFeed()
                 ));
+    }
 
+    @And("personalizo el feed")
+    public void personalizoElFeed() {
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                Click.on(Config.MORE_OPTIONS),
+                Click.on(Config.HIDE_ALL),
+                Click.on(OnboardingWiki.BACK),
+                Click.on(OnboardingWiki.BACK)
+        );
     }
 }

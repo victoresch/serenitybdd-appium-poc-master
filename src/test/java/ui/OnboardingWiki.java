@@ -28,7 +28,8 @@ public class OnboardingWiki {
             .waitingForNoMoreThan(Duration.ofSeconds(2));
     public static final Target LANGUAGES_ON_ONBOARDING = Target.the("Botón regresar ")
             .locatedBy("//android.widget.TextView[@resource-id=\"org.wikipedia.alpha:id/option_label\" and @text=\"2.\t\tEspañol\"]");
-
+    public static final Target LANGUAGES_ON_CONF = Target.the("Botón regresar ")
+            .locatedBy("//android.widget.TextView[@resource-id=\"android:id/summary\" and @text=\"English, español\"]");
 
 
 }
