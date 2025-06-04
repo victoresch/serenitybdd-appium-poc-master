@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="runners.CucumberTestSuite" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="M-VICTORESTUPIN.local" time="0.0">
   <properties/>
-  <system-out><![CDATA[17:50:23.600 [Test worker] DEBUG net.thucydides.core.guice.Injectors - Created injector for module net.thucydides.core.guice.ThucydidesModule
-17:50:23.631 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/src/test/resources/features/wikipedia.feature
-17:50:23.673 [Test worker] DEBUG net.thucydides.core.guice.Injectors - Created injector for module net.thucydides.core.guice.webdriver.WebDriverModule
-17:50:23.678 [Test worker] INFO  - 
+  <system-out><![CDATA[20:11:12.969 [Test worker] DEBUG net.thucydides.core.guice.Injectors - Created injector for module net.thucydides.core.guice.ThucydidesModule
+20:11:13.000 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/src/test/resources/features/wikipedia.feature
+20:11:13.041 [Test worker] DEBUG net.thucydides.core.guice.Injectors - Created injector for module net.thucydides.core.guice.webdriver.WebDriverModule
+20:11:13.045 [Test worker] INFO  - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -20,30 +20,52 @@
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
 -------------------------------------------------------------------------------------
 
-17:50:23.679 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@9fe1207e
-17:50:23.679 [Test worker] INFO  - Test Suite Started: Flujos en Wikipediapp
-17:50:23.684 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/src/test/resources/features/wikipedia.feature
-17:50:23.685 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@9fe1207e
-17:50:23.685 [Test worker] INFO  - Test Suite Started: Flujos en Wikipediapp
-17:50:41.041 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-17:50:41.076 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
-17:50:41.078 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@61e14b53
-17:50:41.079 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda
-17:50:41.079 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@61e14b53: Generating report for test outcome: Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda
-17:50:41.081 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Omitir Onboarding y realizar busqueda to file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/6312e17509e57f4271b81e39efcd8c88975cfcff6b6272d70be7add489d60e6f.json (using temp file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/6312e17509e57f4271b81e39efcd8c88975cfcff6b6272d70be7add489d60e6f.jsonee7dac38-f867-40b4-a37b-fd7a5c6815c6)
-17:50:41.096 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda done
-17:50:41.096 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-17:50:41.096 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 18 ms
-17:50:41.096 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 1 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@22cd8ec2
-17:50:41.096 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda
-17:50:41.096 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@22cd8ec2: Generating report for test outcome: Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda
-17:50:41.429 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:4723 : 1
-17:50:42.271 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda done
-17:50:42.271 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
-17:50:42.271 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 1175 ms
-17:50:42.298 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
-17:50:42.298 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line shutting down
-17:50:42.301 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
+20:11:13.046 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@9fe1207e
+20:11:13.046 [Test worker] INFO  - Test Suite Started: Flujos en Wikipediapp
+20:11:13.051 [Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/src/test/resources/features/wikipedia.feature
+20:11:13.052 [Test worker] DEBUG net.thucydides.core.steps.StepEventBus - Test suite started for story net.thucydides.core.model.Story@9fe1207e
+20:11:13.052 [Test worker] INFO  - Test Suite Started: Flujos en Wikipediapp
+20:12:14.728 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+20:12:14.768 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reporting formats: [JSON, HTML]
+20:12:14.771 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 4 test outcomes using: net.thucydides.core.reports.json.JSONTestOutcomeReporter@34647f58
+20:12:14.771 [pool-1-thread-2] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda
+20:12:14.771 [pool-1-thread-3] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y configurar el idioma
+20:12:14.771 [pool-1-thread-3] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@34647f58: Generating report for test outcome: Flujos en Wikipediapp:Omitir Onboarding y configurar el idioma
+20:12:14.771 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Agregar idioma en onboarding
+20:12:14.771 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@34647f58: Generating report for test outcome: Flujos en Wikipediapp:Agregar idioma en onboarding
+20:12:14.771 [pool-1-thread-2] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@34647f58: Generating report for test outcome: Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda
+20:12:14.772 [pool-1-thread-4] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Personalizar feed
+20:12:14.772 [pool-1-thread-4] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@34647f58: Generating report for test outcome: Flujos en Wikipediapp:Personalizar feed
+20:12:14.775 [pool-1-thread-1] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Agregar idioma en onboarding to file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/8a14449ad5e33df0b1f78c540adef6c3172f995d81ab897726ca1aad4e2db0e4.json (using temp file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/8a14449ad5e33df0b1f78c540adef6c3172f995d81ab897726ca1aad4e2db0e4.json3c7e0184-892e-41d6-b099-6a89de87a413)
+20:12:14.775 [pool-1-thread-2] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Omitir Onboarding y realizar busqueda to file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/6312e17509e57f4271b81e39efcd8c88975cfcff6b6272d70be7add489d60e6f.json (using temp file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/6312e17509e57f4271b81e39efcd8c88975cfcff6b6272d70be7add489d60e6f.jsonccdf6228-f6e9-4d3a-9880-f808dca0ef6d)
+20:12:14.775 [pool-1-thread-4] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Personalizar feed to file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/010cbbb654e586ebe284e907b4e51094150b65e6bd161ea4cc5ba82707e562d0.json (using temp file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/010cbbb654e586ebe284e907b4e51094150b65e6bd161ea4cc5ba82707e562d0.json4373f46a-167a-46b7-82a6-deaecf53e43e)
+20:12:14.775 [pool-1-thread-3] DEBUG net.thucydides.core.reports.json.JSONTestOutcomeReporter - Generating JSON report for Omitir Onboarding y configurar el idioma to file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/f4d038301f44b0d62b41592d4a6b86f3405ee751912788dc54ca81b112f0cc4d.json (using temp file /Users/victorhugoestupinanchalaca/Repos/serenitybdd-appium-poc-master/target/site/serenity/f4d038301f44b0d62b41592d4a6b86f3405ee751912788dc54ca81b112f0cc4d.json6f86cd58-fdbf-4f1c-9ec2-793845d472f7)
+20:12:14.793 [pool-1-thread-2] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda done
+20:12:14.793 [pool-1-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Agregar idioma en onboarding done
+20:12:14.794 [pool-1-thread-3] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y configurar el idioma done
+20:12:14.794 [pool-1-thread-4] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Personalizar feed done
+20:12:14.794 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+20:12:14.794 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 23 ms
+20:12:14.794 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Generating reports for 4 test outcomes using: net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@3023f157
+20:12:14.795 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Agregar idioma en onboarding
+20:12:14.795 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@3023f157: Generating report for test outcome: Flujos en Wikipediapp:Agregar idioma en onboarding
+20:12:14.795 [pool-2-thread-2] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda
+20:12:14.795 [pool-2-thread-2] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@3023f157: Generating report for test outcome: Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda
+20:12:14.795 [pool-2-thread-3] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y configurar el idioma
+20:12:14.795 [pool-2-thread-3] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@3023f157: Generating report for test outcome: Flujos en Wikipediapp:Omitir Onboarding y configurar el idioma
+20:12:14.795 [pool-2-thread-4] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Personalizar feed
+20:12:14.795 [pool-2-thread-4] DEBUG net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@3023f157: Generating report for test outcome: Flujos en Wikipediapp:Personalizar feed
+20:12:14.796 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:4723 : 1
+20:12:15.096 [pool-2-thread-3] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y configurar el idioma done
+20:12:15.097 [pool-2-thread-4] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Personalizar feed done
+20:12:15.864 [pool-2-thread-1] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Agregar idioma en onboarding done
+20:12:15.900 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:4723 : 1
+20:12:15.930 [pool-2-thread-2] DEBUG net.thucydides.core.reports.ReportService - Processing test outcome Flujos en Wikipediapp:Omitir Onboarding y realizar busqueda done
+20:12:15.930 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Shutting down executor service
+20:12:15.930 [Test worker] DEBUG net.thucydides.core.reports.ReportService - Reports generated in: 1136 ms
+20:12:15.959 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
+20:12:15.959 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line shutting down
+20:12:15.963 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Closing darkroom
 ]]></system-out>
   <system-err><![CDATA[?[32m?[1m┌───────────────────────────────────────────────────────────────────────────────────┐?[0m
 ?[32m?[1m│?[0m Share your Cucumber Report with your team at ?[36m?[1m?[4mhttps://reports.cucumber.io?[0m          ?[32m?[1m│?[0m

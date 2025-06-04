@@ -21,7 +21,10 @@ public class HomeWiki {
             .located(By.xpath("//androidx.recyclerview.widget.RecyclerView[@resource-id=\"org.wikipedia.alpha:id/search_results_list\"]/android.view.ViewGroup[1]"))
             .waitingForNoMoreThan(Duration.ofSeconds(2));
     public static final Target RESULT = Target.the("Selecciona una palabra igual a la busqueda")
-            .locatedBy("(//android.widget.TextView[contains(@text,'{0}')])[2]");
+            .locatedBy("//android.view.View[contains(@text,'{0}')]");
+
+
+
 
 
 

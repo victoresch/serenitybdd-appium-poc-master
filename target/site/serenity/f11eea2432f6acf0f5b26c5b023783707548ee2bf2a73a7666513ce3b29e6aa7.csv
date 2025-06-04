@@ -1,2 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Flujos en Wikipediapp","Omitir Onboarding y realizar busqueda","ERROR","2025-06-03T17:50:23.732471-05:00[America/Bogota]","0.0","17.03"
+"Flujos en Wikipediapp","Omitir Onboarding y realizar busqueda","SUCCESS","2025-06-03T20:11:24.625919-05:00[America/Bogota]","0.0","17.24"
+"Flujos en Wikipediapp","Omitir Onboarding y configurar el idioma","SUCCESS","2025-06-03T20:11:42.236015-05:00[America/Bogota]","0.0","15.81"
+"Flujos en Wikipediapp","Personalizar feed","SUCCESS","2025-06-03T20:11:58.307704-05:00[America/Bogota]","0.0","16.18"
